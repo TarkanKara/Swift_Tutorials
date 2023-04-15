@@ -9,8 +9,22 @@ import Foundation
 
 class Employee {
     
-    var name = ""
-    var age = 0
-    var subject = ""
-    var salary = 0
+    var name : String
+    var age : Int
+    var subject : String
+    var salary : Int
+    
+    //initalizer declaration
+    init(name: String, age: Int, subject: String, salary: Int) {
+        print("init çağrıldı")
+        self.name = name
+        self.age = age
+        self.subject = subject
+        self.salary = salary
+    }
+    
+    func salaryy (){
+        self.salary = salary + 100
+        print("maaş attrıldı \(salary)")
+    }
 }
