@@ -20,6 +20,7 @@ class Employee {
     var subject : String
     var salary : Int
     var type : EmployeeType
+    private var hairColour : String = "Siyah"
     
     //initalizer declaration
     init(name: String, age: Int, subject: String, salary: Int, type: EmployeeType) {
@@ -33,5 +34,12 @@ class Employee {
     func salaryy (){
         self.salary = salary + 100
         print("maaş attrıldı \(salary)")
+    }
+    
+    // Access Levels
+    // open, public, internal, fileprivate, private
+    
+    func hairColur(){
+        print("Saç Rengi : \(self.hairColour)")
     }
 }

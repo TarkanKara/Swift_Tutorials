@@ -13,4 +13,9 @@ class DevEmployee : Employee {
         super.salaryy()
         print("DevEmployee Maaşı artırıldı \(salary)")
     }
+    
+    private func newSalaryy(){
+        super.salary = salary + 1500
+        print("Yeni Maaaş : \(salary)")
+    }
 }
