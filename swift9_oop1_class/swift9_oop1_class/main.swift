@@ -27,5 +27,9 @@ ali.salaryy()
 
 print(ali.type)
 
+var mustafa = DevEmployee(name: "Mustafa", age: 55, subject: "Devops", salary: 2500, type: EmployeeType.normalUser)
+
+mustafa.salaryy()
+
 
  
