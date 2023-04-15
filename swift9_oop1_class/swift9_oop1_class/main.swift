@@ -9,7 +9,7 @@ import Foundation
 
 print("Hello, World!")
 
-var ali = Employee(name: "Ali", age: 25, subject: "Yazılım", salary: 1500)
+var ali = Employee(name: "Ali", age: 25, subject: "Yazılım", salary: 1500, type: EmployeeType.adminUser)
 
 //ali.name = "Ali"
 //ali.age = 25
@@ -18,12 +18,14 @@ var ali = Employee(name: "Ali", age: 25, subject: "Yazılım", salary: 1500)
 
 print(ali.age)
 
-var mehmet = Employee(name: "Mehmet", age: 30, subject: "Swift", salary: 2000)
+var mehmet = Employee(name: "Mehmet", age: 30, subject: "Swift", salary: 2000, type: EmployeeType.normalUser)
 
 //mehmet.age = 30
 print(mehmet.age)
 
 ali.salaryy()
+
+print(ali.type)
 
 
  

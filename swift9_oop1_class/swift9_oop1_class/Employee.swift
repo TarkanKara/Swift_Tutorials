@@ -7,20 +7,27 @@
 
 import Foundation
 
+enum EmployeeType {
+    case adminUser
+    case normalUser
+    case unAuthorizedUser
+}
+
 class Employee {
     
     var name : String
     var age : Int
     var subject : String
     var salary : Int
+    var type : EmployeeType
     
     //initalizer declaration
-    init(name: String, age: Int, subject: String, salary: Int) {
-        print("init çağrıldı")
+    init(name: String, age: Int, subject: String, salary: Int, type: EmployeeType) {
         self.name = name
         self.age = age
         self.subject = subject
         self.salary = salary
+        self.type = type
     }
     
     func salaryy (){
